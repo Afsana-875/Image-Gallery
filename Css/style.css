@@ -1,0 +1,69 @@
+/* All Common Css Here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; 
+}
+ul ol li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+/* font-family: "Poppins", sans-serif; */
+/* font-family: "Roboto", serif; */
+/* All Common Css Here End */
+/* All Css */
+body{
+
+    background: linear-gradient(45deg,#1d0000,#20205b);
+}
+.gellary{
+    width: 900px;
+    display: flex;
+     overflow-x: scroll; 
+}
+.gellary div{
+   width: 100%;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   grid-gap: 20px;
+   padding: 10px;
+   flex: none;
+}
+.gellary div img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition:transform 0.4s;
+}
+.gellary::-webkit-scrollbar{
+    display: none;
+}
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+#backbtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+#nextbtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 20px;
+}
+.gellary div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+/* All Css  End*/
